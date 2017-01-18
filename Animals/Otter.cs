@@ -13,7 +13,7 @@ namespace Zoolandia
 
         public string swim()
         {
-            return name + "the otter is swimming, trying to sneak up and pull down your swim trunks.";
+            return name + " the otter is swimming, trying to sneak up and pull down your swim trunks.";
         }
 
     }

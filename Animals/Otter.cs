@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    class Otter: Animals
+    public class Otter: Animals
     {
         public string toy { get; set; }
 
@@ -14,6 +14,11 @@ namespace Zoolandia
         public string swim()
         {
             return name + " the otter is swimming, trying to sneak up and pull down your swim trunks.";
+        }
+
+        public override string attack()
+        {
+            return name + " is throwing its " + toy + " at you. You probably deserve it, you disappointment.";
         }
 
     }

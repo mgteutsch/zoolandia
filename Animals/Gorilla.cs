@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    class Gorilla: Animals
+    public class Gorilla: Animals
     {
         public int numberOfBananas { get; set; }
         
@@ -27,6 +27,11 @@ namespace Zoolandia
             {
                 return name + " cannot do math. " + name + " is a gorilla, you idiot.";
             }
+        }
+
+        public override string attack()
+        {
+            return name + " is charging at you with the wrath of a thousand prehistoric beasts, but is also delicately holding his banana making sure to not drop it while you are pummelled into a pancake, because that would be a waste of a perfectly good banana.";
         }
 
     }

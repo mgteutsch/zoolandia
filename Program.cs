@@ -50,6 +50,11 @@ namespace Zoolandia
 
 
             Console.WriteLine($"There is an {Odder.type} named {Odder.name}, a {Kong.type} named {Kong.name}, and a {EightLegs.type} named {EightLegs.name}.");
+        
+            //Testing override for version-2:
+            Console.WriteLine(EightLegs.attack());
+            Console.WriteLine(Kong.attack());
+            Console.WriteLine(Odder.attack());
         }
     }
 }

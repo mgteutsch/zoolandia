@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    class Spider: Animals
+    public class Spider: Animals
     {
         public bool isVenomous { get; set; }
 
@@ -32,5 +32,16 @@ namespace Zoolandia
             }
         }
 
+        public override string attack()
+        {
+            if (isVenomous == true)
+            {
+                return name + " just bit you... you likely said something stupid. Also, you should probably go to a hospital before that swells and explodes and makes a whole mess of the place.";
+            }
+            else
+            {
+                return name + " just bit you. It's not a venomous bite, but I'd treat this as a warning shot before " + name + " starts calling up some friends.";
+            }
+        }
     }
 } 

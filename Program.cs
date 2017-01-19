@@ -7,23 +7,27 @@ namespace Zoolandia
         public static void Main(string[] args)
         {   
             var EightLegs = new Spider();
-            EightLegs.name = "Dave";
             EightLegs.type = "spider";
             EightLegs.height = 2;
             EightLegs.isVenomous = true;
             EightLegs.bugsInWeb = 9;
 
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            Console.WriteLine("var EightLegs ********************************************************************");
+            Console.WriteLine("----------------------------------------------------------------------------------");
             Console.WriteLine(EightLegs.terrify());
             Console.WriteLine(EightLegs.bugsCaughtInWeb());
 
 
             var Kong = new Gorilla();
-            Kong.name = "Donkey";
             Kong.type = "gorilla";
             Kong.height = 84;
             Kong.weight = 900;
             Kong.numberOfBananas = 117;
 
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            Console.WriteLine("var Kong *************************************************************************");
+            Console.WriteLine("----------------------------------------------------------------------------------");
             Console.WriteLine(Kong.identify());
             Console.WriteLine(Kong.measure());
             Console.WriteLine(Kong.weigh());
@@ -36,11 +40,14 @@ namespace Zoolandia
 
 
             var Odder = new Otter();
-            Odder.name = "Charlotter";
             Odder.type = "otter";
             Odder.height = 11;
             Odder.weight = 30;
             Odder.toy = "glittery rock";
+            
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            Console.WriteLine("var Odder ***********************************************************************");
+            Console.WriteLine("----------------------------------------------------------------------------------");
             Console.WriteLine(Odder.identify());
             Console.WriteLine(Odder.measure());
             Console.WriteLine(Odder.weigh());
@@ -49,12 +56,19 @@ namespace Zoolandia
             Console.WriteLine(Odder.sleep());
 
 
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            Console.WriteLine("Sentence with all 3 animals ******************************************************");
+            Console.WriteLine("----------------------------------------------------------------------------------");
             Console.WriteLine($"There is an {Odder.type} named {Odder.name}, a {Kong.type} named {Kong.name}, and a {EightLegs.type} named {EightLegs.name}.");
         
-            //Testing override for version-2:
-            Console.WriteLine(EightLegs.attack());
-            Console.WriteLine(Kong.attack());
-            Console.WriteLine(Odder.attack());
+
+            //Testing base/override for version-2:
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            Console.WriteLine("Function attack() base/override demonstration ************************************");
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            EightLegs.attack();
+            Kong.attack();
+            Odder.attack();
         }
     }
 }

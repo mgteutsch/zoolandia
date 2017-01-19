@@ -4,9 +4,13 @@ namespace Zoolandia
 {
     public class Gorilla: Animals
     {
+        public Gorilla()
+        {
+            this.name = "Donkey";
+        }
         public int numberOfBananas { get; set; }
         
-        public Gorilla()
+        public Gorilla(bool canDoMath)
         {
             canDoMath = false;
         }
@@ -29,9 +33,9 @@ namespace Zoolandia
             }
         }
 
-        public override string attack()
+        public override void attack()
         {
-            return name + " is charging at you with the wrath of a thousand prehistoric beasts, but is also delicately holding his banana making sure to not drop it while you are pummelled into a pancake, because that would be a waste of a perfectly good banana.";
+            Console.WriteLine($"{name} is charging at you with the wrath of a thousand prehistoric beasts, but is also delicately holding his banana making sure to not drop it while you are pummelled into a pancake, because that would be a waste of a perfectly good banana.");
         }
 
     }

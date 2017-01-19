@@ -32,9 +32,9 @@ namespace Zoolandia
             return name + " weighs " + weight + " pounds."; 
         }
 
-        public virtual string attack()
+        public virtual void attack()
         {
-            return name + " is attacking.";
+            Console.WriteLine("Animal is attacking.");
         }
     }
 } 

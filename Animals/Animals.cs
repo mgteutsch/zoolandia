@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    class Animals
+    public class Animals
     {
         public string name { get; set; }
         public string type { get; set; }
@@ -30,6 +30,11 @@ namespace Zoolandia
         public string weigh()
         {
             return name + " weighs " + weight + " pounds."; 
+        }
+
+        public virtual void attack()
+        {
+            Console.WriteLine("Animal is attacking.");
         }
     }
 } 
